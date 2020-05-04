@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
-//import { signout, isAuthenticated } from "../auth/index";
+import { signout, isAuthenticated } from "../auth/index";
 
 const isActive = (history, path) => {
   if (history.location.pathname === path) {
@@ -36,7 +36,7 @@ const Menu = ({ history }) => {
           </li>
         )}*/}
 
-        {/*{isAuthenticated() && isAuthenticated().user.role === 1 && (
+        {isAuthenticated() && isAuthenticated().user.code === 2609 && (
           <li className="nav-item">
             <Link
               style={isActive(history, "/admin/dashboard")}
@@ -46,9 +46,9 @@ const Menu = ({ history }) => {
               Admin
             </Link>
           </li>
-        )}*/}
+        )}
 
-        {/*{!isAuthenticated() && (
+        {!isAuthenticated() && (
           <React.Fragment>
             <li className="nav-item">
               <Link
@@ -70,9 +70,9 @@ const Menu = ({ history }) => {
               </Link>
             </li>
           </React.Fragment>
-        )}*/}
+        )}
 
-        {/*{isAuthenticated() && (
+        {isAuthenticated() && (
           <li className="nav-item">
             <span
               style={{ cursor: "pointer", color: "#ffffff" }}
@@ -86,7 +86,7 @@ const Menu = ({ history }) => {
               Sign out
             </span>
           </li>
-        )}*/}
+        )}
       </ul>
     </div>
   );

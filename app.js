@@ -51,6 +51,9 @@ app.use(expressValidator());
 //    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 //  });
 //}
+//app.use("/", (req, res) => {
+//  res.send("hello");
+//});
 
 const port = process.env.PORT || 8000;
 console.log(port);

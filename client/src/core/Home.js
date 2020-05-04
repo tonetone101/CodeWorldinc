@@ -1,7 +1,25 @@
 import React, { useEffect, useState } from "react";
 import Layout from "./Layout";
+import { list } from "./homeApi";
 
 const Home = () => {
+  const [post, setPost] = useState([]);
+
+  const loadPost = () => {
+    list().then((data) => {
+      if (data.error) {
+        console.log(data.error);
+      } else {
+        setPost(data);
+      }
+    });
+  };
+
+  useEffect(() => {
+    loadPost();
+    console.log(post);
+  }, []);
+
   return (
     <Layout
       title="CodeWorldinc"
@@ -16,6 +34,17 @@ const Home = () => {
         will know that we care about their vision while still producing quality
         products/ software .
       </h4>
+      <h2>My Post</h2>
+
+      <div className="column">
+        {post.map((results, i) => {
+          return (
+            <div key={i} className="mt-5 mb-5">
+              {results.title}
+            </div>
+          );
+        })}
+      </div>
     </Layout>
   );
 };
