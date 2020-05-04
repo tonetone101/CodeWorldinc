@@ -2,14 +2,17 @@
 const mongoose = require("mongoose");
 const { ObjectId } = mongoose.Schema;
 
-const postSchema = new mongoose.Schema({
-  title: {
+const reviewSchema = new mongoose.Schema({
+  body: {
     type: String,
     required: true,
   },
-  about: {
+  name: {
     type: String,
     required: true,
+  },
+  businessName: {
+    type: String,
   },
   photo: {
     data: Buffer,
@@ -26,4 +29,4 @@ const postSchema = new mongoose.Schema({
   updated: Date,
 });
 
-module.exports = mongoose.model("Post", postSchema);
+module.exports = mongoose.model("Review", reviewSchema);

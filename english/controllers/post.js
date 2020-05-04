@@ -6,7 +6,7 @@ const _ = require("lodash");
 exports.getpost = (req, res, next) => {
   const post = Post.find()
     // .populate("postedBy", "_id name photo role ")
-    .select("_id title name about photo created")
+    .select("_id title about photo created")
     .sort({ created: -1 })
     .then((post) => {
       res.json(post);
@@ -17,7 +17,7 @@ exports.getpost = (req, res, next) => {
 exports.postById = (req, res, next, id) => {
   Post.findById(id)
     .populate("postedBy", "_id name role")
-    .select("_id title name about created photo")
+    .select("_id title about created photo")
     .exec((err, post) => {
       if (err || !post) {
         return res.status(400).json({
@@ -92,7 +92,7 @@ exports.deletepost = (req, res) => {
       });
     }
     res.json({
-      message: "post member deleted successfully",
+      message: "post deleted successfully",
     });
   });
 };

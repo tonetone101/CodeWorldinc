@@ -29,10 +29,12 @@ const authRoutes = require("./general/routes/auth");
 const userRoutes = require("./general/routes/user");
 
 const postRoutes = require("./english/routes/post");
+const reviewRoutes = require("./english/routes/review");
 
 app.use("/", authRoutes);
 app.use("/", userRoutes);
 app.use("/", postRoutes);
+app.use("/", reviewRoutes);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

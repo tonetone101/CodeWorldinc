@@ -17,7 +17,7 @@ router = express.Router();
 
 router.get("/post", getpost);
 router.get("/post/:postId", singlepost);
-router.post("/post/new/:userId", createpost, createpostValidator);
+router.post("/post/new", createpost);
 router.put("/post/edit/:postId", updatepost);
 router.delete("/post/delete/:postId", deletepost);
 
