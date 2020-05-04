@@ -43,7 +43,7 @@ app.use(morgan("dev"));
 app.use(expressValidator());
 
 app.get("/", (req, res) => {
-  res.send("hello");
+  res.send("hi");
 });
 
 const port = process.env.PORT || 8000;
