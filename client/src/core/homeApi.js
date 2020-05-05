@@ -1,4 +1,4 @@
-const uri = "http://localhost:8000";
+export const uri = "http://localhost:8000";
 
 export const create = (userId, token, post) => {
   return fetch(`${uri}/post/new`, {

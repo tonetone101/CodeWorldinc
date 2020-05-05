@@ -14,13 +14,13 @@ const AdminDashBoard = () => {
         <h4 className="card-header">Admin links</h4>
         <ul className="list-group">
           <li className="list-group-item">
-            <Link className="nav-link" to="/">
+            <Link className="nav-link" to="/post/create">
               Create Post
             </Link>
           </li>
           <li className="list-group-item">
-            <Link className="nav-link" to="/">
-              View Reviews
+            <Link className="nav-link" to="/admin/post">
+              Manage Post
             </Link>
           </li>
         </ul>

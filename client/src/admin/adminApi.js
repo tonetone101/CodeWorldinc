@@ -1,48 +1,66 @@
-import { API } from '../config'
+export const uri = "http://localhost:8000";
 
-exports.createCategory = (userId, token, category) => {
-    // console.log(user)
-    return fetch(`${API}/category/create/${userId}`, {
-        method: "POST",
-        headers: {
-            Accept: 'application/json',
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`
-        },
-        body: JSON.stringify(category)
+export const createPost = (userId, token, post) => {
+  return fetch(`${uri}/post/new`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+    body: post,
+  })
+    .then((response) => {
+      return response.json();
     })
-    .then(response => {
-        return response.json()
-    })
-    .catch(error => {
-        console.log(error)
-    })
-}
+    .catch((err) => console.log(err));
+};
 
-exports.createProduct = (userId, token, product) => {
-    return fetch(`${API}/product/create/${userId}`, {
-        method: "POST",
-        headers: {
-            Accept: 'application/json',
-            // to send form data so dont need Content-Type
-            Authorization: `Bearer ${token}`
-        },
-        body: product //sent in form data because of photo
+exports.getPost = () => {
+  return fetch(`${uri}/post`, {
+    method: "GET",
+  })
+    .then((response) => {
+      return response.json();
     })
-    .then(response => {
-        return response.json()
-    })
-    .catch(error => {
-        console.log(error)
-    })
-}
+    .catch((error) => console.log(error));
+};
 
-exports.getCategories = () => {
-    return fetch(`${API}/categories`, {
-        method: "GET"
+exports.singlePost = (postId) => {
+  return fetch(`${uri}/post/${postId}`, {
+    method: "GET",
+  })
+    .then((response) => {
+      return response.json();
     })
-    .then(response => {
-        return response.json()
+    .catch((error) => console.log(error));
+};
+
+export const remove = (postId, userId, token) => {
+  return fetch(`${uri}/post/delete/${postId}`, {
+    method: "DELETE",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+  })
+    .then((response) => {
+      return response.json();
     })
-    .catch(error => console.log(error))
-}
+    .catch((err) => console.log(err));
+};
+
+export const update = (postId, token, post) => {
+  return fetch(`${uri}/post/edit/${postId}`, {
+    method: "PUT",
+    headers: {
+      Accept: "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+    body: post,
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .catch((err) => console.log(err));
+};
