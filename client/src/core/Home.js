@@ -56,6 +56,7 @@ const Home = () => {
       const postPhoto = results._id
         ? `${uri}/post/photo/${results._id}?${new Date().getTime()}`
         : "";
+
       return (
         <div key={i} className="container mt-5 mb-5">
           <div className="row">
@@ -69,6 +70,7 @@ const Home = () => {
                 }}
               />
             </div>
+
             <div id="postText" className="col-md-9">
               <div>
                 <h4>{results.title}</h4>
@@ -83,6 +85,29 @@ const Home = () => {
       );
     });
   };
+
+  const renderEmail = () => (
+    <div
+      style={{
+        fontWeight: "bold",
+      }}
+      className="text-center lead mt-5 mb-5"
+    >
+      <div id="emailDiv" className="container-fluid">
+        <a id="email" href="mailto:AntonioKeo@codeworldinc.org">
+          <h1
+            id="emailClick"
+            style={{ fontWeight: "bold", fontStyle: "italic" }}
+          >
+            LET'S CONNECT!
+          </h1>
+          <p id="emailClick" style={{ color: "white" }}>
+            click here to send email
+          </p>
+        </a>
+      </div>
+    </div>
+  );
 
   const renderSkills = () => (
     <div className="container">
@@ -149,7 +174,9 @@ const Home = () => {
       <h1 className="text-center" style={{ fontWeight: "bold" }}>
         Skills Used
       </h1>
+
       {renderSkills()}
+      {renderEmail()}
       {renderFooter()}
     </Layout>
   );
