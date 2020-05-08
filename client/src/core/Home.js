@@ -3,6 +3,12 @@ import Layout from "./Layout";
 import { list, uri, remove } from "./homeApi";
 import { isAuthenticated } from "../auth/index";
 import { Link } from "react-router-dom";
+import About from "./About";
+import Beliefs from "./Beliefs";
+import Projects from "./Projects";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
+import { SocialIcon } from "react-social-icons";
 
 const Home = () => {
   const [post, setPost] = useState([]);
@@ -28,20 +34,14 @@ const Home = () => {
         <div className="row">
           <div className="col d-flex justify-content-between align-items-baseline">
             <div className="footer-icons">
-              <a
-                href="https://www.facebook.com/itskeezy.baybe"
-                className="mx-2"
-              >
-                <i className="fab fa-facebook"></i>
-              </a>
               <a href="https://github.com/Antkeo1" className="mx-2">
-                <i className="fab fa-github"></i>
+                <SocialIcon url="https://github.com/Antkeo1" />
               </a>
               <a
                 href="https://www.linkedin.com/in/antonio-keo-63b17b168"
                 className="mx-2"
               >
-                <i className="fab fa-linkedin"></i>
+                <SocialIcon url="https://www.linkedin.com/in/antonio-keo-63b17b168" />
               </a>
             </div>
             <h5 className="text-capitalize">&copy;2020 copyright : Coder</h5>
@@ -101,7 +101,10 @@ const Home = () => {
           >
             LET'S CONNECT!
           </h1>
-          <p id="emailClick" style={{ color: "white" }}>
+          <p
+            id="emailClick"
+            style={{ color: "white", textDecoration: "underline" }}
+          >
             click here to send email
           </p>
         </a>
@@ -110,15 +113,15 @@ const Home = () => {
   );
 
   const renderSkills = () => (
-    <div className="container">
+    <div className="container-fluid">
       <div className="column">
         <div className="row text-center">
-          <div className="col-md-6 ">
+          <div className="col-md-6 mb-5">
             <img
               id="skills"
               src={require("../image/mongodb.jpg")}
               height="200"
-              weight="200"
+              width="400"
             />
           </div>
           <div className="col-md-6 ">
@@ -126,7 +129,7 @@ const Home = () => {
               id="skills"
               src={require("../image/expressjs.jpeg")}
               height="200"
-              weight="200"
+              width="400"
             />
           </div>
         </div>
@@ -136,31 +139,37 @@ const Home = () => {
               id="skills"
               src={require("../image/react.png")}
               height="200"
-              weight="200"
+              width="400"
             />
           </div>
 
           <div className="col-md-6 mt-5">
             <img
+              style={{ background: "black" }}
               id="skills"
               src={require("../image/nodejs.png")}
               height="200"
-              weight="200"
+              width="400"
             />
           </div>
         </div>
       </div>
 
-      <p className="text-center mt-5 lead">
-        Here at CodeWorldInc, MERN stack(Mongodb, EpressJs, ReactJs, NodeJs) is
-        used often. A stack is the combination of technologies used to create a
-        web application. Any web application will be made using multiple
-        technologies (frameworks, libraries, databases etc). The MERN stack is a
-        JavaScript stack that’s designed to make the development process
-        smoother. MERN includes four open-source components: MongoDB, Express,
-        React, and Node.js. These components provide an end-to-end framework for
-        developers to work in.
-      </p>
+      <div className="container">
+        <p
+          className="text-center mt-5 mb-5 lead"
+          style={{ color: "black", marginBottom: "50px" }}
+        >
+          At CodeWorldInc, MERN stack(Mongodb, EpressJs, ReactJs, NodeJs) is
+          used often. A stack is the combination of technologies used to create
+          a web application. Any web application will be made using multiple
+          technologies (frameworks, libraries, databases etc). The MERN stack is
+          a JavaScript stack that’s designed to make the development process
+          smoother. MERN includes four open-source components: MongoDB, Express,
+          React, and Node.js. These components provide an end-to-end framework
+          for developers to work in.
+        </p>
+      </div>
     </div>
   );
 
@@ -171,12 +180,24 @@ const Home = () => {
       className="container-fluid"
     >
       <div className="column mt-5 container">{renderPost(post)}</div>
-      <h1 className="text-center" style={{ fontWeight: "bold" }}>
-        Skills Used
-      </h1>
 
-      {renderSkills()}
+      <div id="skillsBackground" className="text-center mb-5 mt-5">
+        <div id="skillsHeader">
+          <h1>Skills</h1>
+          <h4 style={{ color: "black" }}>MERN stack</h4>
+          <div className="icon">
+            <FontAwesomeIcon icon={faCheckSquare} />
+          </div>
+          <div className="title-underline text-center"></div>
+        </div>
+        {renderSkills()}
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <Projects />
       {renderEmail()}
+      <Beliefs />
       {renderFooter()}
     </Layout>
   );
