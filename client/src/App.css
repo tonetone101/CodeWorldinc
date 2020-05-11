@@ -205,8 +205,7 @@
 
 #aboutHeader {
   color: black;
-  display: inline-block;
-  vertical-align: middle;
+
   text-align: center;
   margin-top: 50px;
   font-style: italic;
@@ -244,9 +243,6 @@
 }
 
 @media (max-width: 600px) {
-  #about {
-  }
-
   #aboutBackground {
     height: 1900px;
   }

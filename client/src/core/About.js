@@ -4,32 +4,37 @@ import { faCheckSquare, faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   return (
-    <div className="text-center">
+    <div>
       <div id="aboutHeader">
-        <h1 style={{ fontWeight: "bold" }}>About Me</h1>
-        <h4 style={{ color: "black" }}>
+        <h1 className="text-center" style={{ fontWeight: "bold" }}>
+          About Me
+        </h1>
+        <h4 className="text-center" style={{ color: "black" }}>
           A growth-minded individual with a love for comicbook superheroes
         </h4>
-        <div className="icon">
+        <div className="icon text-center">
           <FontAwesomeIcon icon={faGlobe} />
         </div>
         <div className="title-underline text-center"></div>
       </div>
 
       <div className="container mt-5 offset-md-1">
-        <div className="text-center row">
-          <div className="col-md-6 mb-2">
+        <div className="row">
+          <div className="col-md-6 mb-2 text-center">
             <img
               className="mb-2"
               style={{ borderRadius: "30px" }}
               src={require("../image/me2.jpg")}
-              height="300"
-              width="300"
+              height="400"
+              width="400"
             />
             <figcaption>Founder of CodeWorldInc</figcaption>
           </div>
 
-          <div className="col-md-6">
+          <div className="col-md-6 text-center">
+            <h3 style={{ fontStyle: "italic" }}>
+              ALWAYS LEARNING AND PUSHING BOUNDARIES
+            </h3>
             <p>
               Hello, my name is Antonio Keo. As a first generation Cambodian
               American, I always knew helping others was something I wanted to
@@ -48,7 +53,7 @@ const About = () => {
             <a
               style={{ background: "#0565ff" }}
               href="https://antkeo1.github.io/react-resume/"
-              className="btn btn-lg d-block w-75 text-uppercase mb-5 mx-auto"
+              className="btn btn-lg d-block w-75 text-uppercase mb-5 mt-2 mx-auto"
             >
               view resume
             </a>
