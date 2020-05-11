@@ -92,8 +92,8 @@ const Projects = () => {
                   <span className="">Tic Tac Toe</span>
                 </a>
                 <figcaption>
-                  Got a minute? about a game of tic tac toe Technology used are
-                  JQuery, CSS and html
+                  Got a minute? How about a game of tic tac toe!! Technology
+                  used are JQuery, CSS and html
                 </figcaption>
               </div>
             </div>
@@ -114,8 +114,9 @@ const Projects = () => {
                   <span className="">E-Commerce</span>
                 </a>
                 <figcaption>
-                  An E-commerce web app that I helped design. Technology used
-                  are Javascript, NodeJs, MongoDb, ExpressJs
+                  An E-commerce web app that I helped design, while working part
+                  of a development team. Technology used are Javascript, NodeJs,
+                  MongoDb, ExpressJs
                 </figcaption>
               </div>
             </div>
