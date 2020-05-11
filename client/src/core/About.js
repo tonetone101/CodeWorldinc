@@ -18,8 +18,9 @@ const About = () => {
 
       <div className="container mt-5 offset-md-1">
         <div className="text-center row">
-          <div className="col-md-6">
+          <div className="col-md-6 mb-2">
             <img
+              className="mb-2"
               style={{ borderRadius: "30px" }}
               src={require("../image/me2.jpg")}
               height="300"
