@@ -228,12 +228,36 @@
   background: white;
 }
 
+#postBackground {
+  background-color: #dce7f8;
+  height: 250px;
+}
+
+#postHeader {
+  color: black;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 50px;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
 @media (max-width: 600px) {
   #about {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   #skillsBackground {
     height: 1600px;
+  }
+  #aboutBackground {
+    height: 1100px;
+  }
+  #projects {
+    margin-top: 10px;
+  }
+  #postBackground {
+    height: 450px;
   }
 }
 

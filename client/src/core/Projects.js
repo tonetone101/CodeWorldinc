@@ -30,7 +30,7 @@ const Projects = () => {
   return (
     <div className="text-center">
       <div id="skillsHeader">
-        <h1>Projects</h1>
+        <h1 style={{ fontWeight: "bold" }}>Projects</h1>
         <h4 style={{ color: "black" }}></h4>
         <div className="icon">
           <FontAwesomeIcon icon={faCheckSquare} />
@@ -45,7 +45,7 @@ const Projects = () => {
             <button onClick={() => setFilterKey("UHS")}>
               University High School
             </button>
-            <button onClick={() => setFilterKey("emailer")}>Emailer</button>
+            <button onClick={() => setFilterKey("emailer")}>TICTACTOE</button>
             <button onClick={() => setFilterKey("ecommerce")}>
               E-Commerce
             </button>
@@ -59,28 +59,53 @@ const Projects = () => {
           <div className="text-center row">
             <div className="filter-item UHS col-md-4">
               <div>
-                <img height="200" width="200" />
+                <img
+                  src={require("../image/whitebanner.png")}
+                  height="200"
+                  width="200"
+                />
               </div>
+
               <div>
-                <span className="">UHS</span>
+                <a href="http://uhschool.org" class="search-link">
+                  <span className="">UHS</span>
+                </a>
+                <figcaption>
+                  UHSchool is a multi lingual high School based in Providence,
+                  RI. Technology used are Javascript, NodeJs, MongoDb, ExpressJs
+                </figcaption>
               </div>
             </div>
-            <div className="filter-item emailer  col-md-4">
+
+            <div className="filter-item emailer col-md-4 mt-5">
               <div>
-                <img height="200" width="200" />
+                <img
+                  src="https://i.imgur.com/YYcwrfXm.png"
+                  height="200"
+                  width="200"
+                />
               </div>
               <div>
                 <a
-                  href="https://pvd04-squad06.github.io/Squad-project-client/"
+                  href="https://antkeo1.github.io/myTicTacToe"
                   class="search-link"
                 >
-                  <span className="">Emailer</span>
+                  <span className="">Tic Tac Toe</span>
                 </a>
+                <figcaption>
+                  Got a minute? about a game of tic tac toe Technology used are
+                  Javascript, CSS and html
+                </figcaption>
               </div>
             </div>
-            <div className="filter-item ecommerce  col-md-4">
+
+            <div className="filter-item ecommerce col-md-4 mt-5">
               <div>
-                <img height="200" width="200" />
+                <img
+                  src="https://i.imgur.com/FPS8bBnm.png"
+                  height="200"
+                  width="200"
+                />
               </div>
               <div>
                 <a

@@ -58,30 +58,30 @@ const Home = () => {
         : "";
 
       return (
-        <div key={i} className="container mt-5 mb-5">
-          <div className="row">
-            <div className="col-md-3" id="post">
-              <img
-                src={postPhoto}
-                style={{
-                  height: "150px",
-                  width: "150px",
-                  borderRadius: "10px",
-                }}
-              />
-            </div>
+        <div key={i} className="container mt-5 mb-2">
+          {/*<div className="row">*/}
+          {/*<div className="col-md-3" id="post">
+            <img
+              src={postPhoto}
+              style={{
+                height: "150px",
+                width: "150px",
+                borderRadius: "10px",
+              }}
+            />
+          </div>*/}
 
-            <div id="postText" className="col-md-9">
-              <div>
-                <h4>{results.title}</h4>
-                <p className="lead">{results.about}</p>
-              </div>
+          <div id="postText" className="text-center">
+            <div id="postHeader">
+              <h4>{results.title}</h4>
+              <p className="lead">{results.about}</p>
             </div>
-            {isAuthenticated() && isAuthenticated().user.code === 2609 && (
-              <Link to={`/post/${results._id}`}>View</Link>
-            )}
           </div>
+          {isAuthenticated() && isAuthenticated().user.code === 2609 && (
+            <Link to={`/post/${results._id}`}>View</Link>
+          )}
         </div>
+        //</div>
       );
     });
   };
@@ -97,13 +97,13 @@ const Home = () => {
         <a id="email" href="mailto:AntonioKeo@codeworldinc.org">
           <h1
             id="emailClick"
-            style={{ fontWeight: "bold", fontStyle: "italic" }}
+            style={{ color: "black", fontWeight: "bold", fontStyle: "italic" }}
           >
             LET'S CONNECT!
           </h1>
           <p
             id="emailClick"
-            style={{ color: "white", textDecoration: "underline" }}
+            style={{ color: "black", textDecoration: "underline" }}
           >
             click here to send email
           </p>
@@ -179,7 +179,9 @@ const Home = () => {
       description="CODEWORLDINC"
       className="container-fluid"
     >
-      <div className="column mt-5 container">{renderPost(post)}</div>
+      <div id="postBackground" className="column mt-5 container">
+        {renderPost(post)}
+      </div>
 
       <div id="skillsBackground" className="text-center mb-5 mt-5">
         <div id="skillsHeader">
@@ -195,7 +197,10 @@ const Home = () => {
       <div id="about">
         <About />
       </div>
-      <Projects />
+      <div id="projects">
+        <Projects />
+      </div>
+
       {renderEmail()}
       <Beliefs />
       {renderFooter()}
