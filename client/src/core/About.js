@@ -22,7 +22,7 @@ const About = () => {
         <div className="row">
           <div className="col-md-6 mb-2 text-center">
             <img
-              className="mb-2"
+              className="mb-2 ceoImg"
               style={{ borderRadius: "30px" }}
               src={require("../image/me2.jpg")}
               height="400"

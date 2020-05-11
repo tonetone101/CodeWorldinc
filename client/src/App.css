@@ -262,6 +262,10 @@
     vertical-align: middle;
     margin-top: 170px;
   }
+  .ceoImg {
+    height: 300px;
+    width: 300px;
+  }
 }
 
 .value {
