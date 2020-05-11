@@ -71,7 +71,7 @@ const Projects = () => {
                 </a>
                 <figcaption>
                   UHSchool is a multi lingual high School based in Providence,
-                  RI. Technology used are Javascript, NodeJs, MongoDb, ExpressJs
+                  RI. Technology used are ReactJs, NodeJs, MongoDb, ExpressJs
                 </figcaption>
               </div>
             </div>
@@ -93,7 +93,7 @@ const Projects = () => {
                 </a>
                 <figcaption>
                   Got a minute? about a game of tic tac toe Technology used are
-                  Javascript, CSS and html
+                  JQuery, CSS and html
                 </figcaption>
               </div>
             </div>
