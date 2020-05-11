@@ -2,7 +2,7 @@ import { API } from "../config";
 
 exports.signup = (user) => {
   // console.log(user)
-  return fetch(`http://localhost:8000/signup`, {
+  return fetch(`/signup`, {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -20,7 +20,7 @@ exports.signup = (user) => {
 
 exports.signin = (user) => {
   // console.log(user)
-  return fetch(`http://localhost:8000/signin`, {
+  return fetch(`/signin`, {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -51,7 +51,7 @@ exports.signout = (next) => {
     next();
   }
   // api call
-  return fetch(`http://localhost:8000/signout`, {
+  return fetch(`/signout`, {
     method: "GET",
   })
     .then((res) => {
