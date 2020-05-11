@@ -8,7 +8,6 @@ import Beliefs from "./Beliefs";
 import Projects from "./Projects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
-import { SocialIcon } from "react-social-icons";
 
 const Home = () => {
   const [post, setPost] = useState([]);
@@ -27,31 +26,6 @@ const Home = () => {
     loadPost();
     console.log(post);
   }, []);
-
-  const renderFooter = () => (
-    <div className="text-center">
-      <footer id="footer" className="container-fluid py-2 px-3">
-        <div className="row">
-          <div className="col-md-6 mt-3">
-            <div className="footer-icons">
-              <a href="https://github.com/Antkeo1" className="mx-2">
-                <SocialIcon url="https://github.com/Antkeo1" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/antonio-keo-63b17b168"
-                className="mx-2"
-              >
-                <SocialIcon url="https://www.linkedin.com/in/antonio-keo-63b17b168" />
-              </a>
-            </div>
-          </div>
-          <div className="col-md-6 mt-3">
-            <h5 className="text-capitalize">&copy;2020 copyright : Coder</h5>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
 
   const renderPost = () => {
     return post.map((results, i) => {
@@ -205,9 +179,10 @@ const Home = () => {
         </div>
 
         {renderEmail()}
-        <Beliefs />
+        <div className="mb-5">
+          <Beliefs />
+        </div>
       </div>
-      {renderFooter()}
     </Layout>
   );
 };
