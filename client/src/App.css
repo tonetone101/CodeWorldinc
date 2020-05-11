@@ -270,8 +270,13 @@
     margin-top: 170px;
   }
   #footer {
-    margin-top: 100px;
+    background-color: #0565ff;
     position: relative;
+    display: inline;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
   }
 }
 
