@@ -245,7 +245,7 @@
 
 @media (max-width: 600px) {
   #about {
-    margin-top: 50px;
+    margin-top: 200px;
   }
   #skillsBackground {
     height: 1600px;
@@ -254,7 +254,7 @@
     height: 1300px;
   }
   #projects {
-    margin-top: 10px;
+    margin-top: 50px;
   }
   #postBackground {
     height: 500px;
