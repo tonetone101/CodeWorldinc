@@ -29,7 +29,7 @@ const Home = () => {
   }, []);
 
   const renderFooter = () => (
-    <div>
+    <div className="text-center">
       <footer id="footer" className="container-fluid py-2 px-3">
         <div className="row">
           <div className="col-md-6 mt-3">
