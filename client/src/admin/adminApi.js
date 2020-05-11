@@ -1,7 +1,7 @@
 export const uri = "http://localhost:8000";
 
 export const createPost = (userId, token, post) => {
-  return fetch(`${uri}/post/new`, {
+  return fetch(`/post/new`, {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -16,7 +16,7 @@ export const createPost = (userId, token, post) => {
 };
 
 exports.getPost = () => {
-  return fetch(`${uri}/post`, {
+  return fetch(`/post`, {
     method: "GET",
   })
     .then((response) => {
@@ -26,7 +26,7 @@ exports.getPost = () => {
 };
 
 exports.singlePost = (postId) => {
-  return fetch(`${uri}/post/${postId}`, {
+  return fetch(`/post/${postId}`, {
     method: "GET",
   })
     .then((response) => {
@@ -36,7 +36,7 @@ exports.singlePost = (postId) => {
 };
 
 export const remove = (postId, userId, token) => {
-  return fetch(`${uri}/post/delete/${postId}`, {
+  return fetch(`/post/delete/${postId}`, {
     method: "DELETE",
     headers: {
       Accept: "application/json",
@@ -51,7 +51,7 @@ export const remove = (postId, userId, token) => {
 };
 
 export const update = (postId, token, post) => {
-  return fetch(`${uri}/post/edit/${postId}`, {
+  return fetch(`/post/edit/${postId}`, {
     method: "PUT",
     headers: {
       Accept: "application/json",

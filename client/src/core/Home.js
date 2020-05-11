@@ -54,7 +54,7 @@ const Home = () => {
   const renderPost = () => {
     return post.map((results, i) => {
       const postPhoto = results._id
-        ? `${uri}/post/photo/${results._id}?${new Date().getTime()}`
+        ? `/post/photo/${results._id}?${new Date().getTime()}`
         : "";
 
       return (
