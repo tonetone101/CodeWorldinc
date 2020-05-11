@@ -65,7 +65,7 @@ const Projects = () => {
                 />
               </div>
 
-              <div>
+              <div className="container">
                 <a href="http://uhschool.org" class="search-link">
                   <span className="">UHS</span>
                 </a>
@@ -84,7 +84,7 @@ const Projects = () => {
                   width="200"
                 />
               </div>
-              <div>
+              <div className="container">
                 <a
                   href="https://antkeo1.github.io/myTicTacToe"
                   class="search-link"
@@ -106,7 +106,7 @@ const Projects = () => {
                   width="200"
                 />
               </div>
-              <div>
+              <div className="container">
                 <a
                   href="https://pvd04-squad06.github.io/Squad-project-client/"
                   class="search-link"

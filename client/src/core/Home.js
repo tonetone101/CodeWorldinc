@@ -159,10 +159,17 @@ const Home = () => {
         <div id="postBackground" className="column mt-5 container">
           {renderPost(post)}
         </div>
+        <div id="about">
+          <About />
+        </div>
 
-        <div id="skillsBackground" className="text-center mb-5 mt-5">
+        <div
+          id="skillsBackground"
+          id="aboutBackground"
+          className="text-center mb-5 mt-5"
+        >
           <div id="skillsHeader">
-            <h1>Skills</h1>
+            <h1>Technology Used</h1>
             <h4 style={{ color: "black" }}>MERN stack</h4>
             <div className="icon">
               <FontAwesomeIcon icon={faCheckSquare} />
@@ -171,9 +178,7 @@ const Home = () => {
           </div>
           {renderSkills()}
         </div>
-        <div id="about">
-          <About />
-        </div>
+
         <div id="projects">
           <Projects />
         </div>

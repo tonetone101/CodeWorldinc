@@ -4,7 +4,7 @@ import { faCheckSquare, faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   return (
-    <div className="text-center" id="aboutBackground">
+    <div className="text-center">
       <div id="aboutHeader">
         <h1 style={{ fontWeight: "bold" }}>About Me</h1>
         <h4 style={{ color: "black" }}>
