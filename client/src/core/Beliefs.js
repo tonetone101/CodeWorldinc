@@ -11,8 +11,10 @@ const Beliefs = () => {
   return (
     <div className="text-center">
       <div className="mb-5">
-        <h1>OUR BELIEF</h1>
-        <h4>To live life doing what you love</h4>
+        <h1 style={{ fontWeight: "bold" }}>OUR BELIEF</h1>
+        <h4 style={{ fontStyle: "italic" }}>
+          To live life doing what you love
+        </h4>
         <div className="icon">
           <FontAwesomeIcon icon={faRocket} />
         </div>

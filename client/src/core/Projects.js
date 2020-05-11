@@ -53,11 +53,10 @@ const Projects = () => {
         </div>
       </div>
 
-      <hr />
       <div className="text-center">
         <div className="filter-container text-center ">
           <div className="text-center row">
-            <div className="filter-item UHS col-md-4">
+            <div className="filter-item UHS col-md-4 mt-3">
               <div>
                 <img
                   src={require("../image/whitebanner.png")}
@@ -77,7 +76,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="filter-item emailer col-md-4 mt-5">
+            <div className="filter-item emailer col-md-4 mt-3">
               <div>
                 <img
                   src="https://i.imgur.com/YYcwrfXm.png"
@@ -99,7 +98,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="filter-item ecommerce col-md-4 mt-5">
+            <div className="filter-item ecommerce col-md-4 mt-3">
               <div>
                 <img
                   src="https://i.imgur.com/FPS8bBnm.png"
