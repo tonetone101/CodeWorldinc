@@ -263,6 +263,12 @@
     margin: 0 auto;
     width: 300px;
   }
+  #email > h1 {
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 200px;
+  }
 }
 
 .value {
