@@ -245,7 +245,7 @@
 
 @media (max-width: 600px) {
   #about {
-    margin-top: 200px;
+    margin-top: 300px;
   }
   #skillsBackground {
     height: 1600px;
@@ -261,6 +261,7 @@
   }
   #skills {
     margin: 0 auto;
+    width: 300px;
   }
 }
 
