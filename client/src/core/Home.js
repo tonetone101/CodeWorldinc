@@ -44,9 +44,9 @@ const Home = () => {
                 <SocialIcon url="https://www.linkedin.com/in/antonio-keo-63b17b168" />
               </a>
             </div>
-            <div className="col-md-6 mt-3">
-              <h5 className="text-capitalize">&copy;2020 copyright : Coder</h5>
-            </div>
+          </div>
+          <div className="col-md-6 mt-3">
+            <h5 className="text-capitalize">&copy;2020 copyright : Coder</h5>
           </div>
         </div>
       </footer>
