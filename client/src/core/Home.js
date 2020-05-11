@@ -181,30 +181,32 @@ const Home = () => {
       description="CODEWORLDINC"
       className="container-fluid"
     >
-      <div id="postBackground" className="column mt-5 container">
-        {renderPost(post)}
-      </div>
-
-      <div id="skillsBackground" className="text-center mb-5 mt-5">
-        <div id="skillsHeader">
-          <h1>Skills</h1>
-          <h4 style={{ color: "black" }}>MERN stack</h4>
-          <div className="icon">
-            <FontAwesomeIcon icon={faCheckSquare} />
-          </div>
-          <div className="title-underline text-center"></div>
+      <div>
+        <div id="postBackground" className="column mt-5 container">
+          {renderPost(post)}
         </div>
-        {renderSkills()}
-      </div>
-      <div id="about">
-        <About />
-      </div>
-      <div id="projects">
-        <Projects />
-      </div>
 
-      {renderEmail()}
-      <Beliefs />
+        <div id="skillsBackground" className="text-center mb-5 mt-5">
+          <div id="skillsHeader">
+            <h1>Skills</h1>
+            <h4 style={{ color: "black" }}>MERN stack</h4>
+            <div className="icon">
+              <FontAwesomeIcon icon={faCheckSquare} />
+            </div>
+            <div className="title-underline text-center"></div>
+          </div>
+          {renderSkills()}
+        </div>
+        <div id="about">
+          <About />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
+
+        {renderEmail()}
+        <Beliefs />
+      </div>
       {renderFooter()}
     </Layout>
   );
