@@ -32,7 +32,7 @@ const Home = () => {
     <div>
       <footer id="footer" className="container-fluid py-2 px-3">
         <div className="row">
-          <div className="col d-flex justify-content-between align-items-baseline">
+          <div className="col-md-6 mt-3">
             <div className="footer-icons">
               <a href="https://github.com/Antkeo1" className="mx-2">
                 <SocialIcon url="https://github.com/Antkeo1" />
@@ -44,7 +44,9 @@ const Home = () => {
                 <SocialIcon url="https://www.linkedin.com/in/antonio-keo-63b17b168" />
               </a>
             </div>
-            <h5 className="text-capitalize">&copy;2020 copyright : Coder</h5>
+            <div className="col-md-6 mt-3">
+              <h5 className="text-capitalize">&copy;2020 copyright : Coder</h5>
+            </div>
           </div>
         </div>
       </footer>
