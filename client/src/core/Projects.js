@@ -71,7 +71,10 @@ const Projects = () => {
                 </a>
                 <figcaption>
                   UHSchool is a multi lingual high School based in Providence,
-                  RI. Technology used are ReactJs, NodeJs, MongoDb, ExpressJs
+                  RI. Technology used are ReactJs, NodeJs, MongoDb, ExpressJs.
+                  Features - Translation(spanish, cambodian, portuguese,
+                  english), different user roles and privileges, responsive
+                  design
                 </figcaption>
               </div>
             </div>
@@ -93,7 +96,8 @@ const Projects = () => {
                 </a>
                 <figcaption>
                   Got a minute? How about a game of tic tac toe!! Technology
-                  used are JQuery, CSS and html
+                  used are JQuery, CSS and html. Feature - User can go 1 on 1 in
+                  a classic game of TICTACTOE with a friend
                 </figcaption>
               </div>
             </div>
@@ -116,7 +120,7 @@ const Projects = () => {
                 <figcaption>
                   An E-commerce web app that I helped design, while working part
                   of a development team. Technology used are Javascript, NodeJs,
-                  MongoDb, ExpressJs
+                  MongoDb, ExpressJs.
                 </figcaption>
               </div>
             </div>
