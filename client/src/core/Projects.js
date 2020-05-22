@@ -142,8 +142,11 @@ https: const Projects = () => {
                   <span className="">Reactjs E-Commerce</span>
                 </a>
                 <figcaption>
-                  An E-commerce web app that I design and built fromscratch.
-                  Technology used are Reactjs, NodeJs, MongoDb, ExpressJs.
+                  An E-commerce web app that I design and built. A user with
+                  admin role can create categories and products to sell in each
+                  category. Customers can pay with any debit or credit card as
+                  well as paypal. Technology used are Reactjs, NodeJs, MongoDb,
+                  ExpressJs.
                 </figcaption>
               </div>
               ;
