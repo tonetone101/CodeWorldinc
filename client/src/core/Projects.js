@@ -126,10 +126,10 @@ https: const Projects = () => {
               </div>
             </div>
 
-            <div className="filter-item ecommerce col-md-4 mt-3">
+            <div className="filter-item ecommerce col-md-4 mt-5">
               <div>
                 <img
-                  src="https://i.imgur.com/FPS8bBnm.png"
+                  src="https://i.imgur.com/VDizwPQ.png"
                   height="200"
                   width="200"
                 />
