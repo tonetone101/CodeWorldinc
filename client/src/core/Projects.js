@@ -2,7 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckSquare, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import Isotope from "isotope-layout";
-const Projects = () => {
+
+https: const Projects = () => {
   // store the isotope object in one state
   const [isotope, setIsotope] = React.useState(null);
   // store the filter keyword in another state
@@ -123,6 +124,29 @@ const Projects = () => {
                   MongoDb, ExpressJs.
                 </figcaption>
               </div>
+            </div>
+
+            <div className="filter-item ecommerce col-md-4 mt-3">
+              <div>
+                <img
+                  src="https://i.imgur.com/FPS8bBnm.png"
+                  height="200"
+                  width="200"
+                />
+              </div>
+              <div className="container">
+                <a
+                  href="https://hidden-shore-23649.herokuapp.com/"
+                  class="search-link"
+                >
+                  <span className="">Reactjs E-Commerce</span>
+                </a>
+                <figcaption>
+                  An E-commerce web app that I design and built fromscratch.
+                  Technology used are Reactjs, NodeJs, MongoDb, ExpressJs.
+                </figcaption>
+              </div>
+              ;
             </div>
           </div>
         </div>
